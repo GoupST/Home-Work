@@ -1,139 +1,115 @@
-<html lang="ru">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Сайт визитка
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Roboto', sans-serif;
-        }
-  </style>
- </head>
- <body class="bg-gradient-to-b from-violet-600 via-sky-500 to-violet-900 text-gray-800">
-  <header class="bg-black shadow-md text-white">
-   <div class="container mx-auto p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">
-      Сайт визитка
-    </h1>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="hover:text-blue-500" href="#about">
-        Обо мне
-       </a>
-      </li>
-      <li>
-       <a class="hover:text-blue-500" href="#skills">
-        Навыки
-       </a>
-      </li>
-      <li>
-       <a class="hover:text-blue-500" href="#contact">
-        Связь
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </div>
-  </header>
-  <main class="container mx-auto p-4">
-    <div class="flex flex-col md:flex-row items-center" id="about">
-     <img alt="" class="rounded-full w-32 h-32 md:w-48 md:h-48 mb-4 md:mb-0 md:mr-4" height="150" src="./Assets/Avatar.jpg" width="150"/>
-     <p class="text-lg text-white">
-     Здравствуйте! Меня зовут Калинин Алексей Викторович, я студент третьего курса по специальности "Программист". Я рад возможности представить себя и рассказать о своих навыках и опыте.
-     </p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-blue-500 to-purple-600">
+    <div class="h-full flex justify-between">
+      <div
+        class="bg-white shadow-lg rounded-tr-xl flex-col h-full md:flex-row w-64 max-w-screen-sm"
+      >
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-6">Вход</h2>
+          <form>
+            <div class="mb-4">
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="email"
+              >
+                Email
+              </label>
+              <input
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                id="email"
+                placeholder="Ваша почта"
+                type="email"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="password"
+              >
+                Пароль
+              </label>
+              <input
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                id="password"
+                placeholder="********"
+                type="password"
+              />
+            </div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center"></div>
+              <div class="text-sm">
+                <a
+                  class="font-medium text-indigo-600 hover:text-indigo-500"
+                  href="mailto:test@mail.ru"
+                >
+                  Забыли пароль?
+                </a>
+              </div>
+            </div>
+            <button
+              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              type="submit"
+            >
+              Войти
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-3xl flex flex-col p-8 m-24">
+        <div class="container mx-auto h-screen flex items-center">
+          <div class="flex flex-col max-w-md">
+            <div class="mb-10">
+              <img
+                alt="Logo of DS, a platform for blended learning, featuring a modern and sleek design"
+                class="mx-auto mb-2"
+                height="150"
+                src="./Assets/logoDS.png"
+                width="150"
+              />
+              <h1 class="text-4xl font-extrabold text-center mb-2">
+                Платформа очно-заочного обучения
+              </h1>
+            </div>
+            <div>
+              <p class="text-lg mb-2">Контакты технической поддержки</p>
+              <ul class="flex flex-col text-sm">
+                <li class="flex gap-2 mb-1">
+                  <span> Email: </span>
+                  <a class="text-blue-500" href="mailto:test@mail.ru">
+                    test@mail.ru
+                  </a>
+                </li>
+                <li class="flex gap-2 mb-1">
+                  <span> Email: </span>
+                  <a class="text-blue-500" href="mailto:test@mail.ru">
+                    test@mail.ru
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+      </div>
     </div>
-   <section class="my-8" id="skills">
-    <h2 class="text-3xl font-bold mb-4 text-white">
-     Навыки
-    </h2>
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-     <li class="bg-white p-4 shadow-md rounded-md">
-      <i class="fab fa-html5 text-4xl text-orange-600">
-      </i>
-      <h3 class="text-xl font-bold mt-2">
-       HTML
-      </h3>
-      <p>HTML я изучал в контексте веб-разработки. Я создавал простые веб-страницы и приложения, что дало мне представление о том, как работает клиентская часть.</p>
-     </li>
-     <li class="bg-white p-4 shadow-md rounded-md">
-      <i class="fab fa-css3-alt text-4xl text-blue-600">
-      </i>
-      <h3 class="text-xl font-bold mt-2">
-       CSS
-      </h3>
-      <p>Изучение CSS (Cascading Style Sheets) стало важным этапом в моем пути к освоению веб-разработки. С самого начала я понимал, что создание красивых и функциональных веб-страниц невозможно без знания стилей.</p>
-     </li>
-     <li class="bg-white p-4 shadow-md rounded-md">
-      <i class="fab fa-js text-4xl text-yellow-500">
-      </i>
-      <h3 class="text-xl font-bold mt-2">
-       JavaScript
-      </h3>
-      <p>JavaScript как и HTML я изучал в контексте веб-разработки. Я создавал простые веб-страницы и приложения, что дало мне представление о том, как работает клиентская часть.</p>
-     </li>
-     <li class="bg-white p-4 shadow-md rounded-md">
-      <i class="fab fas fa-terminal text-4xl text-blue-500">
-      </i>
-      <h3 class="text-xl font-bold mt-2">
-       C#
-      </h3>
-      <p>C# я изучал в рамках учебной программы и использовал его для разработки небольших приложений. Мне нравится его строгая типизация и мощные возможности для работы с объектно-ориентированным программированием.</p>
-     </li>
-     <li class="bg-white p-4 shadow-md rounded-md">
-      <i class="fab fas fa-code text-4xl text-red-600">
-      </i>
-      <h3 class="text-xl font-bold mt-2">
-       Python
-      </h3>
-      <p>Python как и C# я изучал в рамках учебной программы и использовал его для разработки небольших приложений. включая автоматизацию процессов и анализ данных. Его простота и читаемость кода позволяют мне быстро реализовывать идеи и прототипы.</p>
-     </li>
-    </ul>
-   </section>
-   <section class="my-8" id="portfolio">
-   
-   <section class="my-8" id="contact">
-   <form class="bg-white p-4 shadow-md rounded-md">
-    <fieldset>
-      <legend class="text-lg font-bold py-2">Связатья со мной</legend>
-     <div class="mb-4">
-      <label class="block text-lg font-bold mb-2" for="name">
-       Имя
-      </label>
-      <input class="w-full p-2 border border-gray-300 rounded-md" id="name" placeholder="Ваше имя" type="text"/>
-     </div>
-     <div class="mb-4">
-      <label class="block text-lg font-bold mb-2" for="email">
-       Email
-      </label>
-      <input class="w-full p-2 border border-gray-300 rounded-md" id="email" placeholder="Ваш email" type="email"/>
-     </div>
-     <div class="mb-4">
-      <label class="block text-lg font-bold mb-2" for="message">
-       Сообщение
-      </label>
-      <textarea class="w-full p-2 border border-gray-300 rounded-md" id="message" placeholder="Ваше сообщение" rows="4"></textarea>
-     </div>
-     <button class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" type="submit">
-      Отправить
-     </button>
-     </fieldset>
-    </form>
-   </section>
-  </main>
-  <footer class="text-white shadow-md mt-8">
-   <div class="container mx-auto p-4 text-center">
-    <a href="https://github.com/GoupST/"><i class="fab fa-github-square text-3xl"></i></a>
-    <p>
-     © 2024 Калинин Алексей.
-    </p>
-   </div>
-  </footer>
- </body>
+  </body>
 </html>
